@@ -1,6 +1,6 @@
 # postgresql_anonymizer-docker-test
 
-
+```
 CREATE DATABASE demo;
 ALTER DATABASE demo SET session_preload_libraries = 'anon';
 
@@ -39,3 +39,4 @@ SECURITY LABEL FOR anon ON COLUMN people.phone IS 'MASKED WITH FUNCTION anon.par
 
 
 SELECT * FROM people;
+```
